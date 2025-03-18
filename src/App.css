@@ -1,0 +1,149 @@
+:root {
+  --red-button: red;
+  --silver-button: silver;
+  --gray-button: gray;
+  --blue-button: darkblue;
+}
+
+.red-button {
+  background-color: var(--red-button);
+}
+
+.silver-button {
+  background-color: var(--silver-button);
+}
+
+.gray-button {
+  background-color: var(--gray-button);
+}
+
+.blue-button {
+  background-color: var(--blue-button);
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-areas:
+  "clear negative percent divide"
+  "seven eight nine multiply"
+  "four five six subtract"
+  "one two three add"
+  "zero decimal backspace equals";
+  grid-template-columns: 90px 90px 90px 90px;
+  gap: 10px;
+  padding: 10px;
+  width:fit-content;
+  height: auto;
+  margin: 100px auto;
+  background-color: black;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.buttons-container button {
+  border: none;
+  height: 90px;
+  border-radius: 50%;
+  font-size: 30px
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#negative {
+  grid-area: negative;
+}
+
+#percent {
+  grid-area: percent;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#multiply {
+  grid-area: multiply
+}
+
+#add {
+  grid-area: add
+}
+
+#subtract {
+  grid-area: subtract
+}
+
+#backspace {
+  grid-area: backspace;
+}
+
+#decimal {
+  grid-area: decimal
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three
+}
+
+#four {
+  grid-area: four
+}
+
+#five {
+  grid-area: five
+}
+
+#six {
+  grid-area: six
+}
+
+#seven {
+  grid-area: seven
+}
+
+#eight {
+  grid-area: eight
+}
+
+#nine {
+  grid-area: nine
+}
+
+#zero {
+  grid-area: zero
+}
+
+#equals {
+  grid-area: equals
+}
+
+.header {
+  width: 410px;
+  height: 80px;
+  margin: 100px auto -100px auto;
+  background-color: rgb(0, 0, 54);
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.expression {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.answer {
+  opacity: 0.7;
+}
