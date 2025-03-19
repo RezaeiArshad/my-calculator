@@ -44,7 +44,17 @@
   border: none;
   height: 90px;
   border-radius: 50%;
-  font-size: 30px
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.buttons-container button:hover {
+  transform: scale(1.1)
+}
+
+.buttons-container button:active {
+  transform: scale(0.95)
 }
 
 #clear {
@@ -129,8 +139,8 @@
 
 .header {
   width: 410px;
-  height: 80px;
-  margin: 100px auto -100px auto;
+  height: 90px;
+  margin: 80px auto -100px auto;
   background-color: rgb(0, 0, 54);
   text-align: right;
   box-sizing: border-box;
@@ -142,6 +152,7 @@
 .expression {
   font-size: 25px;
   font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .answer {
